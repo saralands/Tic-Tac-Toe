@@ -1,0 +1,36 @@
+body {
+  font-size: 40px;
+  text-align: center;
+  font-family: Avenir;
+  width: 650px;
+  margin: 30px auto;
+}
+
+.game-board {
+  border-spacing: 10px 20px;
+}
+.game-board td {
+  border: 1px solid grey;
+  width: 200px;
+  height: 200px;
+  transition: all .3s;
+}
+.game-board td.marked-x:before {
+  content: 'X';
+  color: purple;
+}
+.game-board td.marked-o:before {
+  content: 'O';
+  color: blue;
+}
+.game-board td:hover {
+  border-color: black;
+  cursor: pointer;
+  background-color: grey;
+}
+
+.players div {
+  display: inline;
+}
+
+/*# sourceMappingURL=main.css.map */
